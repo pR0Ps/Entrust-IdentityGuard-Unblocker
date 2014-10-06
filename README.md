@@ -7,6 +7,6 @@ The validity of that statement notwithstanding, some people need to use the appl
 It's not something you choose to install, it's something you're forced to install by your IT department.
 
 In the interest of getting some work done (without buying a new phone), I created this Xposed
-module to bypass their checks for root and custom ROMs.
+module to bypass the checks for root and custom ROMs.
 
 Just install, enable, reboot, and you're done. Get back to work.
