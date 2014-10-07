@@ -1,5 +1,5 @@
-Entrust OTP Unblocker
-=====================
+Entrust IdentityGuard Unblocker
+===============================
 
 The Entrust IdentityGuard Mobile OTP app refuses to work on devices that are rooted or running custom ROM images, calling them "unsecured".
 
