@@ -10,3 +10,11 @@ In the interest of getting some work done (without buying a new phone), I create
 module to bypass the checks for root and custom ROMs.
 
 Just install, enable, reboot, and you're done. Get back to work.
+
+Building
+--------
+
+1. Clone the repository
+2. Download `XposedBridgeApi-<version>.jar` from [this XDA thread](http://forum.xda-developers.com/showpost.php?p=51828909&postcount=1) and save it in `app/libs`
+3. Open the project using [Android Studio](https://developer.android.com/sdk/installing/studio.html)
+4. Run/compile the project
