@@ -19,5 +19,5 @@ android {
 }
 
 dependencies {
-    provided files(fileTree(dir: 'libs', include: 'XposedBridgeApi*.jar').getSingleFile())
+    provided 'de.robv.android.xposed:api:53'
 }

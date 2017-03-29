@@ -15,13 +15,6 @@ build/
 # Local configuration file (sdk path, etc)
 local.properties
 
-# Eclipse
-.metadata/
-proguard/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
 # Signing files
 .signing/
 

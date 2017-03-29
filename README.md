@@ -17,7 +17,3 @@ Building
 1. Clone the repository
 2. Open the project using [Android Studio](https://developer.android.com/sdk/installing/studio.html)
 3. Run/compile the project
-
-Credits
--------
-- [XposedBridgeApi-54.jar](http://forum.xda-developers.com/showpost.php?p=51828909) ([source code](https://github.com/rovo89/XposedBridge)) by rovo89 (Apache v2.0)
