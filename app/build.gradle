@@ -8,8 +8,8 @@ android {
         applicationId "ca.pr0ps.xposed.entrustunblocker"
         minSdkVersion 15
         targetSdkVersion 19
-        versionCode 2
-        versionName "1.1"
+        versionCode 3
+        versionName "1.2"
     }
     buildTypes {
         release {
