@@ -14,9 +14,9 @@ public class Unblocker implements IXposedHookLoadPackage {
     if (!lpparam.packageName.equals("com.entrust.identityGuard.mobile"))
       return;
 
-    //Before 2015-12-15
+    //v3.2.0.96 - Released on 2017-05-03
     try {
-      findAndHookMethod("com.entrust.identityGuard.mobile.Splash", lpparam.classLoader, "isDeviceSecure", new XC_MethodReplacement() {
+      findAndHookMethod("com.entrust.identityGuard.mobile.sdk.PlatformDelegate", lpparam.classLoader, "isDeviceRooted", new XC_MethodReplacement() {
         @Override
         protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
           return false;
@@ -38,9 +38,9 @@ public class Unblocker implements IXposedHookLoadPackage {
     }
     catch (NoSuchMethodError ignored){}
 
-    //v3.2.0.96 - Released on 2017-05-03
-    try{
-      findAndHookMethod("com.entrust.identityGuard.mobile.sdk.PlatformDelegate", lpparam.classLoader, "isDeviceRooted", new XC_MethodReplacement() {
+    //Before 2015-12-15
+    try {
+      findAndHookMethod("com.entrust.identityGuard.mobile.Splash", lpparam.classLoader, "isDeviceSecure", new XC_MethodReplacement() {
         @Override
         protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
           return false;
