@@ -24,7 +24,7 @@ public class Unblocker implements IXposedHookLoadPackage {
       });
       return;
     }
-    catch (NoSuchMethodError e){}
+    catch (NoSuchMethodError ignored){}
 
     //v3.1.0.32 - Released on 2015-12-15
     try {
@@ -36,7 +36,19 @@ public class Unblocker implements IXposedHookLoadPackage {
       });
       return;
     }
-    catch (NoSuchMethodError e){}
+    catch (NoSuchMethodError ignored){}
+
+    //v3.2.0.96 - Released on 2017-05-03
+    try{
+      findAndHookMethod("com.entrust.identityGuard.mobile.sdk.PlatformDelegate", lpparam.classLoader, "isDeviceRooted", new XC_MethodReplacement() {
+        @Override
+        protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
+          return false;
+        }
+      });
+      return;
+    }
+    catch (NoSuchMethodError ignored){}
 
     XposedBridge.log("WARNING: Found Entrust IdentityGuard app but couldn't find a method to patch - this version of the app probably isn't supported yet");
   }
